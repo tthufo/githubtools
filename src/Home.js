@@ -236,7 +236,7 @@ class Login extends Component {
   async getCode(response) {
     this.setState({ loading: true })
     try {
-      fetch(`/githubtools/api/auth?code=` + response)
+      fetch(`/api/auth?code=` + response)
       .then(response => response.json())
       .then(token => localStorage.setItem('accessToken', token.token))
       .then(() => this.getUser())
