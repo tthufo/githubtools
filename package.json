@@ -2,7 +2,7 @@
   "name": "githubtools",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8081",
+  "proxy": "https://tthufo.github.io/githubtools",
   "homepage":"https://tthufo.github.io/githubtools",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
