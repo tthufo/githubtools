@@ -236,7 +236,7 @@ class Login extends Component {
   async getCode(response) {
     this.setState({ loading: true })
     try {
-      fetch(`http://tthufo.openode.io/api/auth?code=` + response)
+      fetch(`https://tthufo.openode.io/api/auth?code=` + response)
       .then(response => response.json())
       .then(token => localStorage.setItem('accessToken', token.token))
       .then(() => this.getUser())
