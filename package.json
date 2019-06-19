@@ -20,11 +20,11 @@
     "regenerator-runtime": "^0.13.2"
   },
   "scripts": {
-    "start": "react-scripts start && run-p server start",
+    "start": "react-scripts start && node ./server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node-env-run server --exec nodemon | pino-colada",
+    "server": "node-env-run server --exec nodemon | pino-colada && nodemon ./server/index.js",
     "dev": "run-p server start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
