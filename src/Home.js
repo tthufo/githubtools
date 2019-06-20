@@ -268,8 +268,8 @@ class Login extends Component {
           alignItems: 'center', 
           // overflow: 'auto',
           padding: 10, 
-          width: '35%', 
-          height: '80%' }}>
+          width: isLogged ? '35%' : 360, 
+          height: isLogged ?  '80%' : 360 }}>
         <div style={{ 
          display: 'flex', 
          flexDirection: 'column', 
